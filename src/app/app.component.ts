@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 declare let $: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor() {
     $(document).ready(function () {
       $('.popup-with-zoom-anim').magnificPopup({
@@ -37,9 +37,8 @@ export class AppComponent {
         // Animation complete.
       });
     });
-
     $(function () {
-      // Slideshow 4
+      // Slideshow 4  滑动
       $("#slider3").responsiveSlides({
         auto: true,
         pager: false,
@@ -56,4 +55,9 @@ export class AppComponent {
 
     });
   }
+  ngOnInit() {
+
+
+  }
+
 }
