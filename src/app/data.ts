@@ -1,5 +1,5 @@
 import { Type } from './type';
-import { Option } from './option/option'
+import { Option } from './footer/option'
 export const Animate: Type[] = [
     { id: 1, images: ['./assets/images/c.jpg', './assets/images/c1.jpg', './assets/images/c2.jpg', './assets/images/c3.jpg'], title: 'Varius sit sed viverra nullam viverra nullam interdum metus', author: 'John Maniya', view: '2,114,200 views', time: '7:34', image: './assets/images/c1.jpg' },
     { id: 2, images: ['./assets/images/c1.jpg', './assets/images/c2.jpg', './assets/images/c3.jpg', './assets/images/c.jpg'], title: 'Varius sit sed viverra viverra nullam nullam interdum metus', author: 'John Maniya', view: '4,200 views', time: '4:42', image: './assets/images/c2.jpg' },
