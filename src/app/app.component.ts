@@ -7,7 +7,6 @@ declare let $: any;
 })
 export class AppComponent implements OnInit {
   constructor() {
-
   }
   ngOnInit() {
 

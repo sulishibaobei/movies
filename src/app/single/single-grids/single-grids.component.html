@@ -1,0 +1,11 @@
+<div class="single-right-grids" *ngFor="let g of grid">
+  <div class="col-md-4 single-right-grid-left">
+    <a routerLink="/single" routerLinkActive="active"><img src={{g.image}} alt="" /></a>
+  </div>
+  <div class="col-md-8 single-right-grid-right">
+    <a routerLink="/single" routerLinkActive="active" class="title"> {{g.title}}</a>
+    <p class="author"><a href="#" class="author">{{g.author}}</a></p>
+    <p class="views">{{g.view}}</p>
+  </div>
+  <div class="clearfix"> </div>
+</div>

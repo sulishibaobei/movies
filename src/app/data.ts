@@ -47,6 +47,16 @@ export const Language: Option[] = [
     { id: 20, value: 'Vietnamese' },
     { id: 21, value: 'Navaho ' },
 ]
+
+
+export const Media: Type[] = [
+    { id: 1, title: 'Tom Brown', author: 'Admin', view: 'Maecenas ultricies rhoncus tincidunt maecenas imperdiet ipsum id ex pretium hendrerit maecenas imperdiet ipsum id ex pretium hendrerit', time: 'View all posts by :' },
+    { id: 2, title: 'Mark Johnson', author: 'Admin', view: 'Maecenas ultricies rhoncus tincidunt maecenas imperdiet ipsum id ex pretium hendrerit maecenas imperdiet ipsum id ex pretium hendrerit', time: 'View all posts by :' },
+    { id: 3, title: 'Steven Smith', author: 'Admin', view: 'Maecenas ultricies rhoncus tincidunt maecenas imperdiet ipsum id ex pretium hendrerit maecenas imperdiet ipsum id ex pretium hendrerit', time: 'View all posts by :' },
+    { id: 4, title: 'Marry Johne', author: 'Admin', view: 'Maecenas ultricies rhoncus tincidunt maecenas imperdiet ipsum id ex pretium hendrerit maecenas imperdiet ipsum id ex pretium hendrerit', time: 'View all posts by :' },
+    { id: 5, title: 'Mark Johnson', author: 'Admin', view: ' Maecenas ultricies rhoncus tincidunt maecenas imperdiet ipsum id ex pretium hendrerit maecenas imperdiet ipsum id ex pretium hendrerit', time: 'View all posts by : ' },
+    { id: 6, title: 'Peter Johnson', author: 'Admin', view: 'Maecenas ultricies rhoncus tincidunt maecenas imperdiet ipsum id ex pretium hendrerit maecenas imperdiet ipsum id ex pretium hendrerit', time: 'View all posts by :' }
+]
 export class Data {
 
 }

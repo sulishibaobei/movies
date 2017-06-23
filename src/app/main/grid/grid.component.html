@@ -1,6 +1,6 @@
 <!--分页数据-->
 <div class="resent-grid-img recommended-grid-img">
-  <a href="single.html"><img src={{c.image}} alt="" /></a>
+  <a routerLink="/single" routerLinkActive="active"><img src={{c.image}} alt="" /></a>
   <div class="time small-time slider-time">
     <p>{{c.time}}</p>
   </div>
@@ -9,7 +9,7 @@
   </div>
 </div>
 <div class="resent-grid-info recommended-grid-info">
-  <h5><a href="single.html" class="title">{{c.title}}</a></h5>
+  <h5><a routerLink="/single" routerLinkActive="active" class="title">{{c.title}}</a></h5>
   <div class="slid-bottom-grids">
     <div class="slid-bottom-grid">
       <p class="author author-info"><a href="#" class="author">{{c.author}}</a></p>
