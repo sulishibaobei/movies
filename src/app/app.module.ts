@@ -18,6 +18,9 @@ import { SingleComponent } from './single/single.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MediaComponent } from './single/media/media.component';
 import { SingleGridsComponent } from './single/single-grids/single-grids.component';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
+import { MainService } from './main/main.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,10 +40,11 @@ import { SingleGridsComponent } from './single/single-grids/single-grids.compone
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
 
   ],
-  providers: [],
+  providers: [MainService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

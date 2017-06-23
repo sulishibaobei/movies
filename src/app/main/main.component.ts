@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Type } from '../type';
-import { Animate, Recommend, Recommend1, Recent } from '../data';
-
+import { Animate, Recommend, Recommend1 } from '../data';
+import { MainService } from './main.service';
 declare let $: any;
 @Component({
   selector: 'app-main',
@@ -12,13 +12,14 @@ export class MainComponent implements OnInit {
   animate = Animate;
   recommend = Recommend;
   recommend1 = Recommend1;
-  recent = Recent;
+
   name = "Recent Videos";
   name1 = "Animated Cartoon";
   name2 = "Recommended";
   name3 = "Sports";
-  constructor() {
-
+  errorMessage: string;
+  recent: Type[];
+  constructor(private mainservice: MainService) {
     $(function () {
       // Slideshow 4  滑动
       $("#slider3").responsiveSlides({
@@ -39,6 +40,15 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getrecent();
+  }
+  getrecent() {
+    this.mainservice.getRecent().then(
+      recent => {
+        this.recent = recent;
+      },
+      error => this.errorMessage = <any>error
+    )
   }
 
 }
