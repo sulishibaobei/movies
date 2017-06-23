@@ -1,46 +1,16 @@
-<div class="main-grids">
-  <div class="top-grids">
-    <div class="recommended-info">
-      <h3>Recent Videos</h3>
-    </div>
-    <app-recent-videos></app-recent-videos>
-  </div>
-  <div class="recommended">
-    <div class="recommended-grids">
-      <div class="recommended-info">
-        <h3>Animated Cartoon</h3>
+<!--中间界面-->
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+  <div class="main-grids">
+    <div class="top-grids">
+      <app-title [name]="name"></app-title>
+      <div class="col-md-4 resent-grid recommended-grid slider-top-grids" *ngFor="let c of recent">
+        <app-grid [c]="c"></app-grid>
       </div>
-      <div id="top" class="callbacks_container">
-        <ul class="rslides" id="slider3">
-          <li *ngFor="let c of animate">
-            <div class="animated-grids">
-              <app-animate [animate]="animate"></app-animate>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <div class="clearfix"> </div>
     </div>
+    <app-recommend [name]="name1" [animate]="animate"></app-recommend>
+    <app-recommend [name]="name2" [animate]="recommend" [animate1]="recommend1"></app-recommend>
+    <app-recommend [name]="name3" [animate]="recommend" [animate1]="recommend1"></app-recommend>
   </div>
-  <div class="recommended">
-    <div class="recommended-grids">
-      <div class="recommended-info">
-        <h3>Recommended</h3>
-      </div>
-      <app-animate [animate]="recommend"></app-animate>
-    </div>
-    <div class="recommended-grids">
-      <app-animate [animate]="recommend1"></app-animate>
-    </div>
-  </div>
-  <div class="recommended">
-    <div class="recommended-grids">
-      <div class="recommended-info">
-        <h3>Sports</h3>
-      </div>
-      <app-animate [animate]="recommend"></app-animate>
-    </div>
-    <div class="recommended-grids">
-      <app-animate [animate]="recommend1"></app-animate>
-    </div>
-  </div>
+  <app-footer></app-footer>
 </div>

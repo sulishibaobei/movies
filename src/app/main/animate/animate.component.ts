@@ -9,6 +9,7 @@ import { Type } from '../../type';
 })
 export class AnimateComponent implements OnInit {
   @Input() animate: Type;
+  @Input() animate1: Type;
 
   constructor() {
   }

@@ -20,9 +20,9 @@ export const Recommend1: Type[] = [
     { id: 4, title: 'Nullam interdum metus a imperdiet pellentesque vitae pulvinar tortor', author: 'John Maniya', view: '71,174 views', time: '2:34', image: './assets/images/r2.jpg' }
 ]
 export const Recent: Type[] = [
-    { id: 1, image: './assets/images/t1.jpg', title: 'Pellentesque vitae pulvinar tortor nullam interdum metus a imperdiet', author: 'John Maniya', view: '2,114,200 views' },
-    { id: 2, image: './assets/images/t2.jpg', title: 'Interdum pellentesque vitae pulvinar tortor nullam metus a imperdiet', author: 'John Maniya', view: '4,200 views' },
-    { id: 3, image: './assets/images/t3.jpg', title: 'Nullam interdum metus a imperdiet pellentesque vitae pulvinar tortor', author: 'John Maniya', view: '71,174 views' }
+    { id: 1, image: './assets/images/t1.jpg', title: 'Pellentesque vitae pulvinar tortor nullam interdum metus a imperdiet', author: 'John Maniya', view: '2,114,200 views', time: '7:20' },
+    { id: 2, image: './assets/images/t2.jpg', title: 'Interdum pellentesque vitae pulvinar tortor nullam metus a imperdiet', author: 'John Maniya', view: '4,200 views', time: '2.30' },
+    { id: 3, image: './assets/images/t3.jpg', title: 'Nullam interdum metus a imperdiet pellentesque vitae pulvinar tortor', author: 'John Maniya', view: '71,174 views', time: '4.30' }
 ];
 export const Language: Option[] = [
 
